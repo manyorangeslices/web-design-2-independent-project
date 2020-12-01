@@ -10,7 +10,7 @@ html {
   text-size-adjust: 100%;
   line-height: 1.5;
   font-family: 'Alatsi', sans-serif;
-  background-color: #EF6EB0;
+  background-color: #035efc;
 }
 
 *,
@@ -24,9 +24,35 @@ body {
    color:  #FDF1E5;
 }
 
-main {
+.columns {
   padding: 1rem;
   margin-left: 3rem;
+  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  grid-column: 1;
+  display: grid;
+  grid-row: 1;
+}
+
+.gametitles {
+  font-size: 2rem;
+}
+.current {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.current-footer {
+  font-size: 1.5rem;
+}
+
+.navigation {
+  background-color: #0c48c9;
 }
 
 a:link {
@@ -50,8 +76,10 @@ h2 {
   margin: 0;
 }
 
-
 header {
+  display: contents;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
 }
 
@@ -61,12 +89,12 @@ h3 {
 }
 
 a:hover {
-  color: #b50d5e;
+  color: #fc035a;
 }
 
 .btn {
   background-color: #FDF1E5;
-  color: #EF6EB0;
+  color: #035efc;
   border-color: #FDF1E5 ;
   border-radius: 30px;
   padding: .75rem;
@@ -77,15 +105,34 @@ a:hover {
   text-align: center;
 }
 
+nav {
+  grid-column: 3;
+  grid-row: 1;
+  display: grid;
+}
+
 ul {
   list-style-type: none;
-  display: flex;
   justify-content: space-around;
   padding: 0;
   padding-left: .5em;
   padding-right: .5em;
   margin: 0;
   margin-bottom: 1em;
+  display: grid;
+  grid-template-areas: "1 2 3";
+}
+
+ul:nth-child(1) {
+  grid-area: 1;
+}
+
+ul:nth-child(2) {
+  grid-area: 2;
+}
+
+ul:nth-child(3) {
+  grid-area: 3;
 }
 
 .banner {
@@ -112,7 +159,6 @@ a {
 }
 
 p {
-  font-size: 1rem;
   font-family: 'Alatsi', sans-serif;
   padding-bottom: 1rem;
 }
@@ -129,6 +175,18 @@ p {
   border-radius: .3rem;
   padding: .6em;
 }
+
+dd {
+  margin: .5rem;
+  font-family: 'Alatsi', sans-serif;
+  font-size: 1rem;
+}
+
+dt {
+  font-size: 1.5rem;
+  font-family: 'Alatsi', sans-serif;
+}
+
 
 footer {
   border-top: #e2e2e2 .2rem solid;
@@ -181,13 +239,6 @@ footer {
 
   .banner {
     margin-top: .5em;
-  }
-
-  .columns {
-    margin-top: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
   }
 
   .viewing {
