@@ -33,6 +33,13 @@ body {
   color: #fdf1e5;
 }
 
+.logo {
+  max-width: 14rem;
+  z-index: 1;
+  display: flex;
+  margin: 2rem;
+}
+
 .blurb {
   padding-top: 2rem;
 }
@@ -65,12 +72,18 @@ dl {
   grid-row: 1;
 }
 
-.gametitles {
-  font-size: 2rem;
+.cards {
+  padding: 1rem;
+}
+
+.title {
+  padding-left: 2rem;
+  font-size: 3rem;
 }
 
 .current {
-  font-size: 2rem;
+  border-style: solid;
+  padding: .5rem;
   text-align: center;
 }
 
@@ -130,9 +143,14 @@ a:hover {
 
 .gamingtitle {
   text-align: center;
+  font-size: 2.5rem;
 }
 
-nav {
+.gametitles {
+  font-size: 1.5rem;
+}
+
+.nav {
   grid-column: 3;
   grid-row: 1;
   display: grid;
@@ -192,15 +210,6 @@ p {
 
 .viewing {
   margin-top: 1.5em;
-}
-
-.learn-more {
-  display: block;
-  text-decoration: none;
-  color: #3783a3;
-  border: #e2e2e2 .2rem solid;
-  border-radius: .3rem;
-  padding: .6em;
 }
 
 dd {
