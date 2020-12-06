@@ -9,7 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   line-height: 1.5;
-  font-family: 'Alatsi', sans-serif;
+  font-family: Alatsi, sans-serif;
   background-color: #035efc;
 }
 
@@ -19,9 +19,26 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 body {
   margin: 0;
-   color:  #FDF1E5;
+  color: #fdf1e5;
+}
+
+.blurb {
+  padding-top: 2rem;
+}
+
+dl {
+  padding-bottom: 2rem;
 }
 
 .columns-main {
@@ -33,10 +50,8 @@ body {
   column-gap: 1rem;
 }
 
-
 .columns {
   padding: 1rem;
-  margin-left: 3rem;
   display: contents;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -53,6 +68,7 @@ body {
 .gametitles {
   font-size: 2rem;
 }
+
 .current {
   font-size: 2rem;
   text-align: center;
@@ -104,9 +120,9 @@ a:hover {
 }
 
 .btn {
-  background-color: #FDF1E5;
+  background-color: #fdf1e5;
   color: #035efc;
-  border-color: #FDF1E5 ;
+  border-color: #fdf1e5;
   border-radius: 30px;
   padding: .75rem;
   text-decoration: none;
@@ -151,12 +167,12 @@ ul:nth-child(3) {
 }
 
 li {
-  color:  #FDF1E5;
+  color: #fdf1e5;
   font-size: 1rem;
 }
 
 a {
-  color:  #FDF1E5;
+  color: #fdf1e5;
 }
 
 .topdescrip {
@@ -170,7 +186,7 @@ a {
 }
 
 p {
-  font-family: 'Alatsi', sans-serif;
+  font-family: Alatsi, sans-serif;
   padding-bottom: 1rem;
 }
 
@@ -189,15 +205,14 @@ p {
 
 dd {
   margin: .5rem;
-  font-family: 'Alatsi', sans-serif;
+  font-family: Alatsi, sans-serif;
   font-size: 1rem;
 }
 
 dt {
   font-size: 1.5rem;
-  font-family: 'Alatsi', sans-serif;
+  font-family: Alatsi, sans-serif;
 }
-
 
 footer {
   border-top: #e2e2e2 .2rem solid;
