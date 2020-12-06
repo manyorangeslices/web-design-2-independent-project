@@ -99,10 +99,6 @@ a:link {
   text-decoration: none;
 }
 
-.nav {
-  padding: 1rem;
-}
-
 img {
   display: block;
   width: 100%;
@@ -154,6 +150,7 @@ a:hover {
   grid-column: 3;
   grid-row: 1;
   display: grid;
+  padding: 1rem;
 }
 
 ul {
